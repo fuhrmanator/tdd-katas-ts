@@ -1,0 +1,29 @@
+{
+  "name": "tdd-katas-ts",
+  "version": "1.0.0",
+  "description": "TDD katas with TypeScript and Jasmine",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/profcfuhrmanets/tdd-katas-ts.git"
+  },
+  "author": "Christopher Fuhrman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/profcfuhrmanets/tdd-katas-ts/issues"
+  },
+  "homepage": "https://github.com/profcfuhrmanets/tdd-katas-ts#readme",
+  "devDependencies": {
+    "@types/jasmine": "^3.4.6",
+    "gulp": "^4.0.2",
+    "gulp-jasmine": "^4.0.0",
+    "gulp-typescript": "^5.0.1",
+    "jasmine": "^3.5.0",
+    "jasmine-ts-console-reporter": "^3.1.1",
+    "merge-stream": "^2.0.0",
+    "typescript": "^3.7.2"
+  }
+}
