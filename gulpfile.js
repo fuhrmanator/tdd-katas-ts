@@ -23,7 +23,7 @@ gulp.task('ts', function () {
 
 gulp.task('test', gulp.series('ts', function () {
 	return gulp.src('spec/**/*.spec.js')
-		.pipe(jasmine()).on('error', function () { });
+		.pipe(jasmine());
 }));
 
 gulp.task('watch', function () {
