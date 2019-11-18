@@ -21,10 +21,12 @@ gulp.task('ts', function () {
 	return merge(stream1, stream2);
 });
 
-gulp.task('test', gulp.series('ts', function () {
+var jasmineRunner = function (done) {
 	return gulp.src('spec/**/*.spec.js')
-		.pipe(jasmine());
-}));
+		.pipe(jasmine()).on('error', done);
+};
+
+gulp.task('test', gulp.series('ts', jasmineRunner));
 
 gulp.task('watch', function () {
 	gulp.watch(['spec/**/*.spec.ts','src/**/*.ts']).on('change', gulp.series('test'));
