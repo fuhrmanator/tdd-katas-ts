@@ -96,7 +96,7 @@ Upon saving that file, the gulp watch automatically tries again:
 [18:23:53] Starting 'test'...
 [18:23:53] Starting 'ts'...
 [18:23:59] Finished 'ts' after 5.94 s
-[18:23:59] Starting '<anonymous>'...
+[18:23:59] Starting 'jasmineRunner'...
 F
 Failures:
 1) X A test returns 1
@@ -104,15 +104,10 @@ Failures:
 
 1 spec, 1 failure
 Finished in 0 seconds
-[18:23:59] '<anonymous>' errored after 77 ms
+[18:23:59] 'jasmineRunner' errored after 77 ms
 [18:23:59] Error in plugin "gulp-jasmine"
 Message:
     Tests failed
-Details:
-    domainEmitter: [object Object]
-    domain: [object Object]
-    domainThrown: false
-
 [18:23:59] 'test' errored after 6.02 s
 ```
 
@@ -130,10 +125,10 @@ The gulp watch window gives us the following encouraging messages:
 [18:26:34] Starting 'test'...
 [18:26:34] Starting 'ts'...
 [18:26:38] Finished 'ts' after 4.55 s
-[18:26:38] Starting '<anonymous>'...
+[18:26:38] Starting 'jasmineRunner'...
 .
 1 spec, 0 failures
 Finished in 0 seconds
-[18:26:38] Finished '<anonymous>' after 15 ms
+[18:26:38] Finished 'jasmineRunner' after 15 ms
 [18:26:38] Finished 'test' after 4.57 s
 ```
